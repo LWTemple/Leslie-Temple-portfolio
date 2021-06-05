@@ -1,0 +1,397 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@LWTemple
+melease
+/
+portfolio-website
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+portfolio-website/css/style.css
+@melease
+melease 2.5
+Latest commit 9af4146 on Apr 18
+ History
+ 1 contributor
+354 lines (290 sloc)  4.75 KB
+
+/*
+Colors used:
+Primary Color (Pink): #E31676;
+Nuetral Darkest (Blackish): #202020;
+Nuetral Dark (Dark Gray): #3F3F3F;
+Nuetral Medium (Medium Gray): #707070;
+Nuetral Light (White): #FFFFFF;
+*/
+* {
+  box-sizing: border-box;
+}
+
+header {
+  box-shadow: 0 2px 4px 0 #e0e0e0;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+  margin-bottom: -8px;
+}
+
+nav > ul > li > a {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  background-color: #fff;
+  display: inline-block;
+  text-align: right;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  text-align: end;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.navtoggle.responsive nav {
+  padding: 45px 0 0;
+  float: right;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #3f3f3f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #e31676;
+  text-decoration: none;
+
+  /* No underlining */
+}
+
+a:hover {
+  color: #ff81bc;
+  text-decoration: underline;
+  background-color: #fff;
+
+  /* Underlining when hovering over a link */
+}
+
+a:focus {
+  color: #ff419a;
+  text-decoration: underline;
+  background-color: #fff;
+
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #ff419a;
+  background-color: #fff;
+}
+
+.button {
+  background-color: #e31676;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #e31676;
+  color: #e31676;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #fff;
+  color: #e31676;
+  text-transform: uppercase;
+  border: 2px solid #e31676;
+  display: block;
+  margin: 24px auto;
+  width: 100px;
+}
+
+.button.contact:hover {
+  background-color: #e31676;
+  color: #fff;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 14px 8px 12px 0;
+  color: #3f3f3f;
+  background-color: #ffe6f2;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 16px;
+}
+
+.containernav {
+  padding-left: 16px;
+  padding-right: 12px;
+  overflow: auto;
+}
+
+.row {
+  margin: 24px 0;
+
+  /* 24px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #efefef;
+  padding-top: 28px;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67rem 0;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+.logo {
+  max-width: 48px;
+  margin-top: 8px;
+}
+
+#contact {
+  background-color: #ffe6f2;
+  padding-top: 16px;
+  margin-top: 48px;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.about-h2 {
+  text-align: left;
+}
+
+.work-top-row {
+  margin-top: -24px;
+}
+
+.social-bottom {
+  display: flex;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 12px 0;
+  }
+
+  .containernav {
+    padding-left: 16px;
+    padding-right: 12px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 6px;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+    float: right;
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-top: 0;
+    min-width: 64px;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 8px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
