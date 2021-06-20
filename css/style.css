@@ -5,6 +5,13 @@ Secondary Color (Gray): #808080;
 Secondary Color  (Blue) 95d6e8 */
 
 
+main {
+  padding-top: 133px;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
@@ -13,7 +20,16 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+padding: 10px;
 }
+
+header {
+  background-color: #D3D3D3;
+   padding: 0px;
+   position: fixed
+}
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -46,7 +62,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #95d6e8;
+  color: #000000;
 }
 
 }
@@ -74,4 +90,59 @@ a:focus {
 }
 .button:hover { /* visited link */
   color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Layout styling */
+
+footer {
+  background-color: #D3D3D3;
+   padding: 10px;
+}
+
+.container {
+  padding: 0 0px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.center {
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center; /* Centers text */
+}
+
+#contact h2 {
+  text-align: center; /* Centers text */
+}
+
+#topnav h2 {
+  text-align: center; /* Centers text */
+}
+
+#eat to live h1 {
+  text-align: center; /* Centers text */
+}
+
+#socialmedia {
+  text-align: center; /* Centers text */
+}
+
+#hero {
+  background-color: #a9a9a9;
+  padding: 20px 20px;
+  display: inline-block;
+ width: 100%;
+}
+
+#hero h3 {
+  margin: 0;
+  padding: 0.67em 0;
 }
