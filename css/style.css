@@ -163,6 +163,10 @@ a:focus {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+.berlin-illustration
+{width:100%;
+}
+
 /* Layout styling */
 
 footer {
