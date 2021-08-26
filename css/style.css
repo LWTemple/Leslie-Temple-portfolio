@@ -6,7 +6,7 @@ Secondary Color  (Blue) 95d6e8 */
 
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 * {
@@ -26,7 +26,7 @@ padding: 10px;
 
 header {
   background-color: #D3D3D3;
-   padding: 0px;
+   padding: 10px 0 4px;
    position: fixed;
    top: 0;
    left: 0;
@@ -122,17 +122,30 @@ a:focus {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
 .navtoggle li .icon {
   position: absolute;
+  padding-right: 0;
   right: 20px;
   top: 2px;
   font-size: 20px;
 }
 .navtoggle li:not(:last-child) {
-  display: none;
+  padding: 0 0 10px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+ border-top: 1px solid rgba(255,127,80,0.5);
 }
 
 .sun {
@@ -244,6 +257,10 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
   nav > ul > li {
     display: inline-block;
     }
